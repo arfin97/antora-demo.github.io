@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>IntelliJ IDEA :: Training</title>
+    <link rel="canonical" href="https://training.rezaulhasan.me/java/beginner/intellij-idea.html">
+    <meta name="generator" content="Antora 2.2.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="stylesheet" href="../../_/css/site-extra.css">
+<link rel="icon" href="../../favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <div class="navbar-item">
+                <a href="http://training.rezaulhasan.me">Training</a>
+                <span class="separator">//</span>
+                <a href="https://training.rezaulhasan.me">Docs</a>
+            </div>
+            <button class="navbar-burger" data-target="topbar-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="java" data-version="master">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Java Training</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Beginner</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Introduction to IDE</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="intellij-idea.html">IntelliJ IDEA</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Build Tools</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="gradle.html">Gradle</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="maven.html">Maven</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Java Training</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Java Training</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Java Training</a></li>
+    <li>Beginner</li>
+    <li>Introduction to IDE</li>
+    <li><a href="intellij-idea.html">IntelliJ IDEA</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/xomidar/java-training/edit/master/docs/modules/beginner/pages/intellij-idea.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<article class="doc">
+<h1 class="page">IntelliJ IDEA</h1>
+<div class="sect1">
+<h2 id="_keymap"><a class="anchor" href="#_keymap"></a>Keymap</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>IntelliJ IDEA keymaps for productive java programming.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<a href="https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf">Download</a> the default keymap reference card by <strong>Jetbrains</strong>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<div class="title">IntelliJ IDEA plugins for keymap learning and presentation</div>
+<ul>
+<li>
+<p><a href="https://plugins.jetbrains.com/plugin/9792-key-promoter-x/versions">Key Promoter X</a> plugin shows a popup notification with the corresponding keyboard shortcut whenever a command executed using the mouse.
+It also shows most used keymap statistics.</p>
+</li>
+<li>
+<p><a href="https://plugins.jetbrains.com/plugin/7345-presentation-assistant">Presentation Assistant</a> plugin shows a popup with the corresponding description whenever a keymap pressed.
+It can be very useful during presentation, screencast.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Both plugin can be used together for learning shortcuts.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_life_saviour_keymaps"><a class="anchor" href="#_life_saviour_keymaps"></a>Life Saviour Keymaps</h3>
+<div class="paragraph">
+<p>These keymaps are picked from other tables.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Windows &amp; Linux - Life Saviour Keymaps</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Shortcut</th>
+<th class="tableblock halign-left valign-top">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Shift</kbd>+<kbd>Shift</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Search everywhere</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Alt</kbd>+<kbd>Enter</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Show intention actions and quick-fixes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>E</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Recent files popup</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>N</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Go to class</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>P</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parameter info.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>W</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Extend selection</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Space</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Smart code completion</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Shift</kbd>+<kbd>F6</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rename</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Alt</kbd>+<kbd>7</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Structure</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Alt</kbd>+<kbd>F7</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Find usages</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>F7</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Find usages in file</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Open quick definition lookup</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_general"><a class="anchor" href="#_general"></a>General</h3>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. Windows &amp; Linux - General</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Shortcut</th>
+<th class="tableblock halign-left valign-top">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F12</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Toggle maximizing editor</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>S</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Open Settings dialog</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Open Project Structure dialog</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Shift</kbd>+<kbd>Ctrl</kbd>+<kbd>A</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Find Action</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_navigate_code_effectively"><a class="anchor" href="#_navigate_code_effectively"></a>Navigate Code Effectively</h3>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 3. Windows &amp; Linux - Navigate Code Effectively</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Shortcut</th>
+<th class="tableblock halign-left valign-top">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Shift</kbd>+<kbd>Shift</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Search everywhere</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>N</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Go to class</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Go to file</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>E</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Recent files popup</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>B</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Go to declaration</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Open quick definition lookup</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>F12</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">File structure popup (method list)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_live_template_code_generation"><a class="anchor" href="#_live_template_code_generation"></a>Live Template Code Generation</h3>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 4. Windows &amp; Linux - Live Template Code Generation</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shortcut</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Purpose</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Alt</kbd>+<kbd>Insert</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Generate code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>J</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Surround with Live Template</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>J</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Insert Live Template</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Some examples of builtin live templates at IntelliJ IDEA</p>
+</div>
+<div class="sect3">
+<h4 id="_declaration"><a class="anchor" href="#_declaration"></a>Declaration</h4>
+<div class="listingblock">
+<div class="title">psvm / main</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">    public static void main(String[] args) {
+            //code
+    }</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_statement"><a class="anchor" href="#_statement"></a>Statement</h4>
+<div class="listingblock">
+<div class="title">sout</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">        System.out.println(myVariable);</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">ifn</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">        if (myVariable == null) {
+            // code
+        }</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">inn</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">        if (myVariable != null) {
+            //code
+        }</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">fori</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">        for (int i = 0; i &lt; myVariable; i++) {
+            //code
+        }</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_editing"><a class="anchor" href="#_editing"></a>Editing</h3>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 5. Windows &amp; Linux - Editing</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Shortcut</th>
+<th class="tableblock halign-left valign-top">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Space</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Smart code completion</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Alt</kbd>+<kbd>Enter</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Show intention actions and quick-fixes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>P</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parameter info</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>W</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Extend selection</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>D</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duplicate current line</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>O</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Override methods</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>I</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Implement methods</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>W</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shrink selection</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Enter</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Smart line split</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Shift</kbd>+<kbd>Enter</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Start new line</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>/</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Comment /uncomment with line comment</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>/</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Comment /uncomment with block comment</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>L</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reformat code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>O</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optimize imports</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>I</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Auto-indent line(s)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_refactoring"><a class="anchor" href="#_refactoring"></a>Refactoring</h3>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 6. Windows &amp; Linux - Refactoring</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shortcut</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Purpose</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refactor this</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><kbd>F5</kbd></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Copy</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><kbd>F6</kbd></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Move</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Shift</kbd>+<kbd>F6</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rename</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>M</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Extract Method</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>V</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Extract Variable</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_debugging"><a class="anchor" href="#_debugging"></a>Debugging</h3>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 7. Windows &amp; Linux - Debugging</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shortcut</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Purpose</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><kbd>F8</kbd></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Step over</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><kbd>F7</kbd></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Step into</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Alt</kbd>+<kbd>F8</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evaluate expression</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>F8</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Toggle breakpoint</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_version_control"><a class="anchor" href="#_version_control"></a>Version Control</h3>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 8. Windows &amp; Linux - Version Control</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shortcut</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Purpose</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>K</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Commit project to VCS</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>T</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Update project from VCS</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Push commits</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_compile_and_run"><a class="anchor" href="#_compile_and_run"></a>Compile and Run</h3>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 9. Windows &amp; Linux - Compile and Run</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shortcut</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Purpose</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>F9</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Make project</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Shift</kbd>+<kbd>F10</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Run</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Shift</kbd>+<kbd>F9</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Debug</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_useful_plugins"><a class="anchor" href="#_useful_plugins"></a>Useful plugins</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://plugins.jetbrains.com/plugin/6317-lombok">Lombok</a> for annotation based code generation.</p>
+</li>
+<li>
+<p><a href="https://plugins.jetbrains.com/plugin/7391-asciidoc">AsciiDoc</a> for the technical documentation.</p>
+</li>
+<li>
+<p><a href="https://plugins.jetbrains.com/plugin/11058-extra-icons">Extra Icons</a></p>
+</li>
+<li>
+<p><a href="https://plugins.jetbrains.com/plugin/10080-rainbow-brackets">Rainbow Brackets</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_external_resources"><a class="anchor" href="#_external_resources"></a>External Resources</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Pluralsight - <a href="https://app.pluralsight.com/library/courses/intellij-ce-getting-started/">Getting Started with IntelliJ CE</a> by David Starr.
+Duration <strong>2h 47m</strong>.
+Released <strong>1 Sep 2017</strong>.</p>
+</li>
+<li>
+<p><a href="https://www.jetbrains.com/help/idea/getting-started.html">IntelliJ IDEA Getting started</a></p>
+</li>
+<li>
+<p><a href="https://www.jetbrains.com/help/idea/mastering-keyboard-shortcuts.html">IntelliJ IDEA keyboard shortcuts﻿</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+  </div>
+</main>
+</div>
+<footer class="footer">
+    <p>Copyright (C) 2020 <a href="https://rezaulhasan.me">Md. Rezaul Hasan</a> and individual contributors</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
