@@ -1,0 +1,4 @@
+[source,java,indent=0]
+----
+include::code/Movie.java[lines=1..5]
+----
